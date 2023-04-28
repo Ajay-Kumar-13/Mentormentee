@@ -1,0 +1,67 @@
+.signin {
+    display: flex;
+    height: 100vh;
+    margin: 20px;
+}
+
+.signin .image {
+    width: 15rem;
+}
+
+.signin .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.signin .flex-container .flex-item {
+    text-align: center;
+}
+
+.signin .flex-container .card {
+    /* width: 50rem; */
+    margin-top: 30px;
+}
+
+.signin .flex-container .card-header {
+    color: #b1040e;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.signin .flex-container .form-body {
+    text-align: left;
+}
+
+.signin .flex-container .form-group {
+    margin: 10px 0;
+}
+
+.signin .flex-container .card-body .btn {
+    background-color: #b1040e!important;
+    color: white;
+    border-radius: 0;
+    width: 100%;
+}
+
+.signin .flex-container .forget-password {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.signin .flex-container .forget-password a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+}
+
+.signin .flex-container .create-account {
+    margin-top: 10px;
+}
+
+.signin .flex-container .forget-password a:hover {
+    text-decoration: underline;
+    color: #f60;
+}

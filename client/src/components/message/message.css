@@ -1,0 +1,26 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.messageText {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #b1040e;
+    color: white;
+    max-width: 300px;
+}
+
+.messageBottom {
+    font-size: 12px;
+}
+
+.message.own {
+    align-items: flex-end;
+}
+
+.message.own .messageText {
+    background-color: lightgray;
+    color: black;
+}

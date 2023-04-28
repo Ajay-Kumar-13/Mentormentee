@@ -1,0 +1,70 @@
+.casesNewPage {
+    padding: 10px;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.firstbar {
+    background-color: #fff;
+    width: 100%;
+    padding: 7px;
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    align-items: center;
+}
+
+.secondDiv {
+    
+    width: 100%;
+    padding: 7px;
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80vh;
+}
+
+.firstbar p {
+    margin: 0;
+    color: #870209;
+}
+
+.newCase {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.casechild .title {
+    color: #870209;
+    border: none;
+    background-color: transparent;
+}
+
+.casechild p{
+    margin: 0;
+}
+
+.casechild .title {
+    cursor: pointer;
+}
+
+.casechild .title:hover {
+    text-decoration: underline;
+    color: #c8030d;
+}
+
+.nocases {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgba(161, 160, 160, 0.422);
+}

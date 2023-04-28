@@ -1,0 +1,214 @@
+.mentor {
+    overflow-y: hidden;
+}
+
+.mentor nav {
+    width: 100%;
+    height: 70px;
+    background-color: #e9ecef;
+    box-shadow: 0px 5px 5px rgb(211, 211, 211);
+    color: gray;
+    padding: 30px;
+}
+
+.mentor .navbarLinks {
+    position: relative;
+    width: 100%;
+}
+
+.mentor .navbar-brand {
+    margin-left: 60px;
+}
+
+.mentor .mentorName {
+    position: absolute;
+    right: 0;
+    font-weight: 800;
+}
+
+.GitamLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mentor .Navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mentor .image {
+    position: absolute;
+    left: 30px;
+}
+
+.mentordashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.mentordashboard .students {
+    flex: 2;
+    max-height: var(--vh, 1vh)!important;
+    /* height: 20px; */
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.mentordashboard .controls {
+    flex: 8;
+    min-height: 87vh;
+}
+
+
+
+.students .student {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 227, 227);
+    font-weight: 600;
+    padding: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #c5c5c7;
+    transition: transform .5s ease;
+}
+
+.students .student:focus {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 227, 227);
+    font-weight: 600;
+    padding: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #c5c5c7;
+    scale: 1.1;
+    color: #b1040e;
+}
+
+.students .student:hover {
+    scale: 1.1;
+    color: #b1040e;
+    transform: scale(1.1);
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.controls .studentDetails {
+    flex: 6;
+    padding: 10px;
+    min-height: 87vh;
+    border-radius: 0.3rem;
+}
+
+.controls .chatBox {
+    flex: 4;
+    max-height: var(--vh, 1vh)!important;
+    padding: 10px
+}
+
+.studentDetails .p1 {
+    font-weight: 600;
+    color: #c5c5c7;
+    text-align: center;
+}
+
+.mentor .controls .flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.mentor .controls .flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.mentor .activity .messages {
+    background-color: teal;
+}
+
+.mentor .controls .flex-item:hover {
+    background-color: 870209;
+    box-shadow: 8px 5px 5px rgb(211, 211, 211);
+}
+
+
+
+
+@media (max-width: 912px) {
+    .mentor nav {
+        padding: 0 !important;
+    }
+
+    .mentordashboard {
+        flex-direction: column;
+    }
+
+    .mentor .mentorName {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .mentordashboard .students {
+        display: none;
+        width: 70%;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .mentor .controls .flex-item {
+        margin: 10px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10%;
+    }
+
+    .navbar-collapse {
+        padding: 1em;
+        margin: 50px 0 !important;
+        min-width: 100vw !important;
+        background-color: #e9ecef;
+    }
+
+    .navbar-collapse a{
+        margin: 0;
+    }
+
+    .mentor .chatBox {
+        display: none;
+        margin: 0 10px 20px 10px;
+    }
+
+    .conversationwith {
+        display: block!important;
+        font-weight: 500;
+    }
+
+    .mentor {
+        overflow-y: auto;
+    }
+
+}
