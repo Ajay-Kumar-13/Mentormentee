@@ -1,6 +1,0 @@
-remarks
-problems
-date
-intrests
-sno
-message
