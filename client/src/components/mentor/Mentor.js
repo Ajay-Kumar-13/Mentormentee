@@ -32,7 +32,7 @@ function Mentor() {
 
 
     useEffect(() => {
-        axios.get('/data/mentor/' + user.Branch + '/' + user.Username)
+        axios.get('https://mentormentee-server.onrender.com/data/mentor/' + user.Branch + '/' + user.Username)
             .then(response => {
                 setData(response.data);
             })
@@ -40,7 +40,7 @@ function Mentor() {
 
     useEffect(() => {
         if (student) {
-            axios.get("/auth/conversation/" + student.REGISTRATIONNUMBER)
+            axios.get("https://mentormentee-server.onrender.com/auth/conversation/" + student.REGISTRATIONNUMBER)
                 .then(response => {
                     if (response.data.length != 0) {
                         setConvo(response.data);
@@ -61,7 +61,7 @@ function Mentor() {
 
     const handleConversation = () => {
         if (student) {
-            axios.post('/auth/conversation/' + user.Username + '/' + student.REGISTRATIONNUMBER)
+            axios.post('https://mentormentee-server.onrender.com/auth/conversation/' + user.Username + '/' + student.REGISTRATIONNUMBER)
                 .then(response => {
                     if (response.data.success) {
                         alert("Conversation created succesfully!")
@@ -73,7 +73,7 @@ function Mentor() {
     }
 
     const handleSubmitCase = () => {
-        axios.post('/data/case/' + student.REGISTRATIONNUMBER, caseModel)
+        axios.post('https://mentormentee-server.onrender.com/data/case/' + student.REGISTRATIONNUMBER, caseModel)
             .then(response => {
                 if (response.data.success) {
                     document.getElementById("closeModel").click();
@@ -91,7 +91,7 @@ function Mentor() {
     }
 
     const handleNavbar = () => {
-        axios.get("/data/cases/" + student?.REGISTRATIONNUMBER)
+        axios.get("https://mentormentee-server.onrender.com/data/cases/" + student?.REGISTRATIONNUMBER)
             .then(response => {
                 setCases([response.data]);
             })
