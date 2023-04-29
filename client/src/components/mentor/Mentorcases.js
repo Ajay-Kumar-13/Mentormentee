@@ -9,7 +9,7 @@ function Mentorcases() {
     const [cases, setCases] = useState();
 
     useEffect(() => {
-        axios.get("/data/cases/" + state)
+        axios.get("https://mentormentee-server.onrender.com/data/cases/" + state)
             .then(response => {
                 setCases([response.data]);
             })
