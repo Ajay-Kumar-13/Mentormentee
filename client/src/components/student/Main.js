@@ -19,7 +19,7 @@ function Main() {
     useEffect(() => {
         console.log(user.Role);
         if (user.Role === "student") {
-            axios.get("/auth/conversation/" + user.Username)
+            axios.get("https://mentormentee-server.onrender.com/auth/conversation/" + user.Username)
                 .then(response => {
                     console.log("Response", response.data);
                     if (response.data.length !== 0) {
@@ -33,7 +33,7 @@ function Main() {
 
     useEffect(() => {
         if(user) {
-            axios.get("/data/cases/"+user.Username)
+            axios.get("https://mentormentee-server.onrender.com/data/cases/"+user.Username)
                 .then(response => {
                     setCases([response.data]);
                 })
@@ -42,7 +42,7 @@ function Main() {
 
     const handleConversation = () => {
         if (mentor) {
-            axios.post('/auth/conversation/' + user.Username + '/' + mentor.id)
+            axios.post('https://mentormentee-server.onrender.com/auth/conversation/' + user.Username + '/' + mentor.id)
                 .then(response => {
                     if (response.data.success) {
                         alert("Conversation created succesfully!");
