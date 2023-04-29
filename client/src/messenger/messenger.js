@@ -14,7 +14,9 @@ function Messenger({ user, conversation }) {
     const socket = useRef();
 
     useEffect(() => {
-        socket.current = io("ws://localhost:8900");
+//         socket.current = io("ws://localhost:8900");
+        socket.current = io("wss://mentormentee-client.onrender.com");
+
         socket.current.on("getMessage", data=> {
             setarrivalMessage({
                 sender: data.senderId,
