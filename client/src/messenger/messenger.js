@@ -15,7 +15,7 @@ function Messenger({ user, conversation }) {
 
     useEffect(() => {
 //         socket.current = io("ws://localhost:8900");
-        socket.current = io("wss://mentormentee-client.onrender.com");
+        socket.current = io("wss://mentormentee-socket.onrender.com");
 
         socket.current.on("getMessage", data=> {
             setarrivalMessage({
