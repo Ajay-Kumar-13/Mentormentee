@@ -7,7 +7,7 @@ function Student(props) {
     const handleClick = () => {
         document.getElementById("toggler").click();
         document.getElementById("chatBox").style.display = "block"
-        axios.get("/data/"+props.branch+'/'+props.data.REGISTRATIONNUMBER)
+        axios.get("https://mentormentee-server.onrender.com/data/"+props.branch+'/'+props.data.REGISTRATIONNUMBER)
             .then(response => {
                 props.function(response.data);
             })
