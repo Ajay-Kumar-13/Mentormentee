@@ -10,7 +10,7 @@ function Mnewcase(props) {
     });
 
     const handleDelete = () => {
-        axios.delete("/data/deleteCase/" + props.title)
+        axios.delete("https://mentormentee-server.onrender.com/data/deleteCase/" + props.title)
             .then(response => {
                 console.log("delete response", response.data);
                 if (response.data.success) {
@@ -30,7 +30,7 @@ function Mnewcase(props) {
 
     const handleUpdate = () => {
 
-        axios.put("/data/updateCase/" + props.title, newcase)
+        axios.put("https://mentormentee-server.onrender.com/data/updateCase/" + props.title, newcase)
             .then(response => {
                 if (response.data.success) {
                     document.getElementById("closeModel").click();
