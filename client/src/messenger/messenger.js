@@ -37,7 +37,7 @@ function Messenger({ user, conversation }) {
         const getMessages = async () => {
             if (cid) {
                 try {
-                    const res = await axios.get("/auth/messages/" + cid._id);
+                    const res = await axios.get("https://mentormentee-server.onrender.com/auth/messages/" + cid._id);
                     setMessages(res.data);
                 } catch (err) {
                     console.log(err);
@@ -73,7 +73,7 @@ function Messenger({ user, conversation }) {
         })
 
         try {
-            const res = await axios.post("/auth/messages/", message);
+            const res = await axios.post("https://mentormentee-server.onrender.com/auth/messages/", message);
             setMessages([...messages, res.data]);
             setnewMessage("")
         } catch (err) {
