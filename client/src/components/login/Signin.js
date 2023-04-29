@@ -40,13 +40,13 @@ function Signin() {
 
     useEffect(() => {
         if (details.role) {
-            axios.get("/auth/signin/" + details.username)
+            axios.get("https://mentormentee-server.onrender.com/auth/signin/" + details.username)
                 .then(response => {
                     console.log("account", response.data.length);
                     console.log(response.data);
                     if (response.data.length == 0) {
                         console.log("account creating ...");
-                        axios.post("/auth/signUp", details)
+                        axios.post("https://mentormentee-server.onrender.com/auth/signUp", details)
                             .then(response => {
                                 if (response.data.success) {
                                     if (details.role === "student") {
@@ -103,10 +103,10 @@ function Signin() {
     }, [details])
 
     useEffect(() => {
-        axios.get("/auth/conversation/" + user.Id)
+        axios.get("https://mentormentee-server.onrender.com/auth/conversation/" + user.Id)
             .then(response => {
                 if (response.data.length == 0) {
-                    axios.post('/auth/conversation/' + user.Id + '/' + user.receiverId)
+                    axios.post('https://mentormentee-server.onrender.com/auth/conversation/' + user.Id + '/' + user.receiverId)
                         .then(response => {
                             if (response.data.success) {
                                 console.log("conversation created!");
@@ -137,7 +137,7 @@ function Signin() {
     }, [user])
 
     const handleSubmit = (username) => {
-        axios.get('/auth/signin/' + username)
+        axios.get('https://mentormentee-server.onrender.com/auth/signin/' + username)
             .then(response => {
                 const data = response.data[0]
 
@@ -151,7 +151,7 @@ function Signin() {
     }
 
     const handleSignup = () => {
-        axios.get("/data/" + details.branch + '/' + details.username)
+        axios.get("https://mentormentee-server.onrender.com/data/" + details.branch + '/' + details.username)
             .then(response => {
                 if (response.data.length != 0) {
                     const userDetails = {
@@ -168,7 +168,7 @@ function Signin() {
                         })
                     })
                 } else {
-                    axios.get("/data/mentor/" + details.branch + '/' + details.username)
+                    axios.get("https://mentormentee-server.onrender.com/data/mentor/" + details.branch + '/' + details.username)
                         .then(response => {
                             const userDetails = {
                                 name: response.data[0].Mentor,
