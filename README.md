@@ -1,4 +1,4 @@
-Mentor Mentee Website
+<strong>Mentor Mentee Website<strong />
 
 "Mentor Mentee" a platform for mentors which provides a comprehensive dashboard to connect with their mentees in a quicker and efficient way. 
 
