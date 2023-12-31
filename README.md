@@ -4,18 +4,20 @@
 
 <ul>
   <li>
-    This website was developed using the cutting-edge technologies like <strong>ReactJS</strong>, data was managed by the <strong>MongoDB</strong> and Routing was handled by the <strong>ExpressJS</strong>. 
+    <p>This website was developed using the cutting-edge technologies like <strong>ReactJS</strong>, data was managed by the <strong>MongoDB</strong> and Routing was handled by the <strong>ExpressJS</strong>. </p>
   </li>
   <li>
-    It supports the real-time time chat which was developed using <strong>Socket Programming</strong>.
+    <p>It supports the real-time time chat which was developed using <strong>Socket Programming</strong>.</p>
   </li>
   <li>
-    Code was developed using the <strong>re-usable</strong> components.
+    <p>Code was developed using the <strong>re-usable</strong> components.</p>
   </li>
   <li>
-    This website was responsive and taken care of all the screen sizes, which was developed using bootstrap and media queries in css.
+    <p>This website was responsive and taken care of all the screen sizes, which was developed using bootstrap and media queries in css.</p>
   </li>
-  <li>It was deployed on the Render for demonstration purposes.</li>
+  <li>
+    <p>It was deployed on the Render for demonstration purposes.</p>
+  </li>
 </ul>
 
 <strong>Prerequisites</strong>
@@ -24,15 +26,15 @@
 <strong>Steps to run</strong>
  <ul>
    <li>
-     Navigate to Socket folder and run <code>node index.js</code>. <br>
-     To enable the real-time chat functionality.
+     <p>Navigate to Socket folder and run <code>node index.js</code>.</p>
+     <p>To enable the real-time chat functionality.</p>
    </li>
    <li>
-     Navigate to Backend folder and run <code>node server.js</code>. <br>
-     To enable all services
+     <p>Navigate to Backend folder and run <code>node server.js</code>.</p>
+     <p>To enable all services.</p>
    </li>
    <li>
-     Navigate to Client folder and run <code>npm start</code>. <br>
-     To start the application
+     <p>Navigate to Client folder and run <code>npm start</code>.</p>
+     <p>To start the application.</p>
    </li>
  </ul>
