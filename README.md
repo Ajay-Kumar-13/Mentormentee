@@ -16,3 +16,22 @@
     This website was responsive and taken care of all the screen sizes, which was developed using bootstrap and media queries in css.
   </li>
 </ul>
+
+<strong>Prerequisites</strong>
+<p>Make sure you have <strong>node</strong> and <strong>npm</strong> installed on your system.</p>
+
+<strong>Steps to run</strong>
+ <ul>
+   <li>
+     Navigate to Socket folder and run <code>node index.js</code>. <br>
+     To enable the real-time chat functionality.
+   </li>
+   <li>
+     Navigate to Backend folder and run <code>node server.js</code>. <br>
+     To enable all services
+   </li>
+   <li>
+     Navigate to Client folder and run <code>npm start</code>. <br>
+     To start the application
+   </li>
+ </ul>
