@@ -15,6 +15,7 @@
   <li>
     This website was responsive and taken care of all the screen sizes, which was developed using bootstrap and media queries in css.
   </li>
+  <li>It was deployed on the Render for demonstration purposes.</li>
 </ul>
 
 <strong>Prerequisites</strong>
